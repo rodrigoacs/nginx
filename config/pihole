@@ -1,0 +1,8 @@
+server {
+	listen 7071;
+	
+	location / {
+		set $service_url https://pihole:443;
+		proxy_pass $service_url;
+	}
+}

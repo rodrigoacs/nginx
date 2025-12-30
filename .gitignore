@@ -1,0 +1,15 @@
+.env
+.env.*
+
+*.key
+*.crt
+*.pem
+*.pfx
+ssl/
+certs/
+
+*.log
+logs/
+
+.DS_Store
+Thumbs.db

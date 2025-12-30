@@ -1,0 +1,10 @@
+server {
+	listen 80;
+	server_name api.jrst.dev;
+
+	location /21daysapp/ {
+		set $url http://21daysapp.backend:3000;
+		rewrite ^/21daysapp/(.*)$ /$1 break;
+		proxy_pass $url;
+	}
+}
