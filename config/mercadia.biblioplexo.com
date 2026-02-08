@@ -26,7 +26,7 @@ server {
 	}
 	
 	location / {
-		proxy_pass http://mercadia_app:3000;
+		proxy_pass http://mercadia:3000;
 	}
 }
 
